@@ -1,4 +1,4 @@
-"""Editable Blender 5.2 scene for Jaswanth's animated GitHub identity.
+"""Editable Blender 5.2 scene for Paramesh's animated GitHub identity.
 
 Run in Higgsfield 3D Jutsu. The artifacts registry is provided by the host.
 """
@@ -103,11 +103,11 @@ plinth.modifiers.new('Pedestal smooth normals','WEIGHTED_NORMAL')
 ring('Cyan pedestal rim',(0,0,.095),1.67,.012,cyan)
 ring('Fine outer etching',(0,0,.123),1.50,.006,muted)
 
-core=empty('SVJ floating identity assembly',(0,0,1.64))
+core=empty('PA floating identity assembly',(0,0,1.64))
 cube('Core chamfered ceramic body',(0,0,0),(1.38,1.38,1.38),navy,.15,core)
 cube('Front cyan reveal',(0,-.687,0),(1.12,.016,1.12),cyan,.09,core)
 cube('Front recessed display',(0,-.704,0),(1.05,.03,1.05),base,.075,core)
-text('SVJ engraved monogram','SVJ',(0,-.728,.095),.40,white,parent=core)
+text('PA engraved monogram','PA',(0,-.728,.095),.40,white,parent=core)
 text('Core signature','BUILD / CONNECT',(0,-.73,-.21),.079,cyan,parent=core)
 for i in range(3):
     cube('Signal bar '+str(i),(-.2+i*.2,-.73,-.36),(.115,.015,.018),cyan if i<2 else violet,.005,core)
@@ -169,7 +169,7 @@ for o in (core,orbit)+tuple(x for x in scene.objects if x.name.endswith(' module
 scene.frame_set(1)
 scene.render.image_settings.media_type='IMAGE'
 scene.render.image_settings.file_format='PNG'
-target=artifacts.file(name='jaswanth-3d-preview.png',media_type='image/png')
+target=artifacts.file(name='paramesh-3d-preview.png',media_type='image/png')
 scene.render.filepath=target.path
 bpy.ops.render.render(write_still=True)
 target.publish()

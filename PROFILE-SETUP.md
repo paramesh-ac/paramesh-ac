@@ -1,41 +1,25 @@
-# Remaining account configuration
+# GitHub Account Configuration for Paramesh Achari
 
-The README redesign, résumé PDF, project cards, achievements, hiring strip, and six-second animation are implemented in this repository. The two remaining account settings and pinning improvements require the account's GitHub interface.
+The README redesign, résumé PDF, project cards, certifications, tech stack, and responsive panels are implemented in this repository.
 
 ## 1. Account details
 
-Open [GitHub profile settings](https://github.com/settings/profile) and use:
+Open [GitHub profile settings](https://github.com/settings/profile) and update:
 
 | Field | Value |
 | --- | --- |
-| Name | Savvani Venkata Jaswanth |
-| Bio | Python Backend & AI Developer · FastAPI, SQL & practical AI · Algonex IT Solutions · Open to Bengaluru roles |
+| Name | Paramesh Achari |
+| Bio | Python Full-Stack AI Developer · FastAPI, React.js, LangChain & LLMs · Intern at Algonex IT Solutions |
 | Location | Tirupati, Andhra Pradesh, India |
-| Website | https://jaswanth-dimensional-portfolio.savanijaswanth20.chatgpt.site |
+| Email | parameshachari10@gmail.com |
+| Social | LinkedIn: https://www.linkedin.com/in/gulabi-paramesh-achari-4a4277269/ |
 | Time zone | Asia/Kolkata — India Standard Time, UTC+05:30 |
 
-Tirupati is the location in the supplied résumé. Bengaluru is the preferred location for opportunities.
+## 2. Implemented profile features
 
-## 2. Pinned repositories
-
-On [the profile](https://github.com/savanijaswanth20-wq), use **Customize your pins** and select these six repositories:
-
-1. [ROBO_ORDER](https://github.com/savanijaswanth20-wq/ROBO_ORDER) — conversational AI and Python backend.
-2. [SAVVORA-E-COM-](https://github.com/savanijaswanth20-wq/SAVVORA-E-COM-) — commerce and order workflows.
-3. [kakatiya-vidya-niketan](https://github.com/savanijaswanth20-wq/kakatiya-vidya-niketan) — school management interface.
-4. [chinni_jewels](https://github.com/savanijaswanth20-wq/chinni_jewels) — jewellery storefront.
-5. [portfolio_2.0](https://github.com/savanijaswanth20-wq/portfolio_2.0) — animated personal portfolio.
-6. [savanijaswanth20-wq](https://github.com/savanijaswanth20-wq/savanijaswanth20-wq) — this profile and its artwork source.
-
-## Implemented repository improvements
-
-- Résumé button connected to the supplied, unchanged [PDF](./assets/Jaswanth-Resume.pdf).
-- Three flagship projects visible; two more inside one expandable section.
-- Matching desktop and mobile Portfolio cards.
-- One toolkit graphic, with a readable mobile layout.
-- Responsive achievement cards with résumé-backed claims.
-- Direct links to concrete project implementations.
-- Consistent “Python Backend & AI Developer” title in the README and banners.
-- GIFs, PNG posters, SVGs, and the résumé PDF hosted in this repository.
-- Six-second, 20 fps, 120-frame animation with matching loop poses.
-- Hiring strip for Python Backend, Full-Stack and AI opportunities in Bengaluru.
+- Résumé button connected to [Paramesh-Resume.pdf](./assets/Paramesh-Resume.pdf).
+- Featured projects showcased: AI Resume Analyzer, AI Document Chatbot (RAG), and Full-Stack Career Management Platform.
+- Core technical stack displayed across Python, FastAPI, React.js, PostgreSQL, Django, LangChain, RAG, PyTorch, Docker & AWS.
+- Certifications showcased: Generative AI (Algonex), Python, DBMS & OOPs (Algonex), and MERN Stack Developer (EDU-VERSITY).
+- Direct clickable links to LinkedIn, GitHub, Email, and Résumé PDF.
+- Dark theme editorial aesthetic with responsive mobile layouts.

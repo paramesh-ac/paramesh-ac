@@ -38,7 +38,7 @@ def main():
         if target.exists() and digest(target.read_bytes()) == expected:
             print(f"Verified cached {item['path']}")
             continue
-        request = Request(item["url"], headers={"User-Agent": "Jaswanth-Profile-Assets/1.0"})
+        request = Request(item["url"], headers={"User-Agent": "Paramesh-Profile-Assets/1.0"})
         with urlopen(request, timeout=60) as response:
             resolved = urlparse(response.geturl())
             if resolved.scheme != "https" or resolved.netloc != MEDIA_HOST:

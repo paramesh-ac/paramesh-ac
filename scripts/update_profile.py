@@ -24,7 +24,7 @@ def get_json(path):
     headers = {
         "Accept": "application/vnd.github+json",
         "X-GitHub-Api-Version": "2022-11-28",
-        "User-Agent": "jaswanth-profile-updater",
+        "User-Agent": "paramesh-profile-updater",
     }
     token = os.environ.get("GITHUB_TOKEN")
     if token:
@@ -88,9 +88,11 @@ def render_stats(owner, public_repos, followers, stars):
 
 
 def main():
-    owner = os.environ.get("GITHUB_REPOSITORY_OWNER", "").strip()
+    owner = os.environ.get("GITHUB_REPOSITORY_OWNER", "paramesh-ac").strip()
+    if not owner:
+        owner = "paramesh-ac"
     if not re.fullmatch(r"[A-Za-z0-9](?:[A-Za-z0-9-]{0,37}[A-Za-z0-9])?", owner):
-        raise SystemExit("Run this script in GitHub Actions, or set GITHUB_REPOSITORY_OWNER to your username.")
+        owner = "paramesh-ac"
     user = get_json(f"/users/{quote(owner, safe='')}")
     repositories = get_repositories(owner)
     owned_public = [
@@ -125,7 +127,7 @@ def main():
     (ROOT / "assets" / "editorial-dashboard.svg").write_text(dashboard, encoding="utf-8")
     (ROOT / "assets" / "editorial-dashboard-mobile.svg").write_text(dashboard_mobile, encoding="utf-8")
     readme_path.write_text(readme, encoding="utf-8")
-    print("Updated public activity and profile links.")
+    print(f"Updated public activity and profile links for @{owner}.")
 
 
 if __name__ == "__main__":
