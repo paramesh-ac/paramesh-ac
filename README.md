@@ -97,7 +97,7 @@ I'm **Paramesh Achari**, a **Python Full-Stack AI Developer** passionate about b
 </picture>
 
 <!-- PROFILE-STATS:START -->
-**4 public repositories · 1 follower · 0 stars on original repositories**
+**5 public repositories · 1 follower · 0 stars on original repositories**
 
 _Public data only. Stars exclude forked repositories. Refreshed by GitHub Actions._
 <!-- PROFILE-STATS:END -->
